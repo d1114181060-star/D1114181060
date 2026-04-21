@@ -21,33 +21,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>點擊遊戲</title>
-<style>
-body {
-    text-align: center;
-    background-color: pink;
-    font-family: Arial;
-}
-button {
-    font-size: 30px;
-    padding: 20px;
-}
-</style>
+    <title>簡單點擊遊戲</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+        button {
+            font-size: 30px;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>🎮 點擊遊戲</h1>
+<h1>點擊遊戲</h1>
 <p>分數：<span id="score">0</span></p>
 <button onclick="addScore()">點我！</button>
 
 <script>
-let score = 0;
-function addScore(){
-    score++;
-    document.getElementById("score").innerText = score;
-}
+    let score = 0;
+
+    function addScore() {
+        score++;
+        document.getElementById("score").innerText = score;
+    }
 </script>
 
 </body>
